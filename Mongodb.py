@@ -27,6 +27,7 @@ def create():
 	#ki jis form me data store hua h)me provide kr dega.Or ye data jayega new_user ke pass.
 	new_user = user.find_one({'_id': ex })
 
+
 	#ab new_user is data ko daal dega output me using 'field1 = dict['field']'.
 	output = {'name' : new_user['name'],'age' : new_user['age'],'designation' : new_user['designation'],'personality' : new_user['personality']}
 
