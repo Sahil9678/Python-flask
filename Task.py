@@ -1,5 +1,5 @@
-from flask import Flask , jsonify , request , json ,flash
-from flask_sqlalchemy import SQLAlchemy
+from flask import Flask ,jsonify,request,json
+from flask_sqlalchemy import SQLAlchemy 
 from sqlalchemy.sql import func
 from sqlalchemy import Column , DateTime
 
@@ -14,7 +14,7 @@ db = SQLAlchemy(app)
 class Ak47(db.Model):
 	#ham class banate h taki hame fields mil jayein jo ki db se connected ho or ek id naam ki primary field banyenge 
 	#taki ham uniquely kisi person ko identify kar sakein.
-	id = db.Column(db.Integer , primary_key=True)
+	id = db.Column(db.Integer ,primary_key=True)
 	name = db.Column(db.String(25))
 	age = db.Column(db.Integer)
 	designation = db.Column(db.String(30)) 
